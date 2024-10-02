@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin Project:Library</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <table id="table-container">
+        <tr>
+          <th>Name</th>
+          <th>Book</th>
+          <th>Pages</th>
+          <th>Finished Reading?</th>
+          <th>Actions</th>
+        </tr>
+      </table>
+      <dialog id="dialog">
+        <form method="dialog" id="myForm">
+          <p>
+            <label>
+              Book Name:
+              <input type="text" name="name" id="name" required />
+            </label>
+          </p>
+          <p>
+            <label>
+              Author:
+              <input type="text" name="author" id="author" required />
+            </label>
+          </p>
+          <p>
+            <label>
+              Total Pages:
+              <input type="number" name="pages" id="pages" required />
+            </label>
+          </p>
+          <p>
+            <label>
+              Finished Reading?:
+              <input type="checkbox" name="finished" id="finished" required />
+            </label>
+          </p>
+          <div>
+            <button type="submit" formnovalidate >Cancel</button>
+            <button type="submit" id="confirmBtn">Confirm</button>
+          </div>
+        </form>
+      </dialog>
+      <p>
+        <button id="show-dialog">Add New Book</button>
+      </p>
+      <output></output>
+    </div>
+  </body>
+</html>
