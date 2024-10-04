@@ -25,10 +25,15 @@ td {
   color: white;
 }
 
+td {
+  text-wrap: nowrap;
+}
+
 td.button-cell {
   display: flex;
   justify-content: space-evenly; /* Or use 'space-around' for equal space on both sides */
   align-items: center; /* Align buttons vertically in the center of the cell */
+  gap: 10px;
 }
 
 button {
