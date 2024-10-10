@@ -12,6 +12,22 @@ const pages = document.getElementById("pages")
 const finished = document.getElementById("finished")
 const form = document.getElementById("myForm")
 
+bookName.addEventListener("input", (event) => {
+  if (bookName.validity.tooShort) {
+    bookName.setCustomValidity("Title needs to be longer than 2 characters")
+  } else {
+    bookName.setCustomValidity("")
+  }
+})
+
+pages.addEventListener("input", (event) => {
+  if (pages.validity.rangeUnderFlow) {
+    pages.setCustomValidity("Pages need to be greater than 0")
+  } else {
+    pages.setCustomValidity("")
+  }
+})
+
 showBtn.addEventListener("click", () => {
   dialog.showModal()
 })

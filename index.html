@@ -23,7 +23,7 @@
           <p>
             <label>
               Book Name:
-              <input type="text" name="name" id="name" required />
+              <input type="text" name="name" id="name" required minlength="2" />
             </label>
           </p>
           <p>
@@ -35,7 +35,7 @@
           <p>
             <label>
               Total Pages:
-              <input type="number" name="pages" id="pages" required />
+              <input type="number" name="pages" id="pages" required min="1" />
             </label>
           </p>
           <p>
@@ -45,7 +45,7 @@
             </label>
           </p>
           <div>
-            <button type="submit" formnovalidate >Cancel</button>
+            <button type="submit" formnovalidate>Cancel</button>
             <button type="submit" id="confirmBtn">Confirm</button>
           </div>
         </form>
